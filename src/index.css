@@ -1,0 +1,289 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #89a2c2;
+  --secondary-color: #415a77;
+  --shadow-color: rgba(0, 2, 0, 0.5);
+  --gradient-start: rgba(255, 255, 255, 1);
+  --gradient-end: rgb(178, 205, 231);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.light-mode {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --gradient-start: rgba(255, 255, 255, 1);
+  --gradient-end: #9cb1cb;
+}
+
+.dark-mode {
+  --background-color: #333333;
+  --text-color: #ffffff;
+  --primary-color: #ffcc00;
+  --secondary-color: #ffaa00;
+  --border-color: #ffcc00;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+  --gradient-start: rgba(0, 0, 0, 1);
+  --gradient-end: #415a77;
+}
+
+body.light-mode {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+body.dark-mode {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h2 {
+  margin-top: 20px;
+  color: var(--text-color);
+}
+
+section {
+  padding: 20px 0;
+}
+
+.brand-name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem !important; /* Adjust the size as needed */
+  color: var(--text-color);
+}
+
+.about-section {
+  background: linear-gradient(90deg, var(--gradient-start) 0%, var(--gradient-end) 80%);
+}
+
+.about-section h1 {
+  font-size: 2.5rem;
+}
+
+.about-section h2 {
+  font-size: 2.2rem;
+  margin-top: 10px;
+  color: var(--secondary-color);
+}
+
+.about-section h3 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  margin-right: 40px;
+}
+
+.about-section .profile-img {
+  width: 420px; /* Ensure the image is a square */
+  height: 420px;
+  padding: 10px;
+  margin-left: 40px;
+  box-shadow: 10px 10px 20px 5px var(--shadow-color);
+  object-fit: cover; /* Ensures the image fits within the circle */
+}
+
+.about-section .btn-outline-primary {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.about-section .btn-outline-primary:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.circular-buttons {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  gap: 100px;
+}
+
+.circular-button {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%;
+  border: 1px solid black; /* Add this line for the black border */
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.circular-button:hover {
+  transform: scale(1.1);
+}
+
+
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Increase the gap between rows */
+  margin-top: 40px;
+}
+
+.skill-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Increase the gap between skills */
+}
+
+/* Define the keyframes for slide-in animation */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the skill icons */
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease; /* For hover effect */
+}
+
+.skill p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.skill:hover {
+  transform: scale(1.2);
+}
+
+/* Hide the skill elements initially */
+.skill.hidden {
+  opacity: 0;
+}
+
+/*  Useless
+.skill.slide-in {
+  animation: slideInRight 0.5s ease-out forwards;
+} */
+
+
+.text-center {
+  font-family: 'Arial', sans-serif; /* Change the "My skill" font family here */
+}
+
+.project-card {
+  border-radius: 5px;
+  box-shadow: 5px 5px 8px 5px var(--secondary-color);;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project-image {
+  width: 100%;
+  height: 350px;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+/* Apply the animations to the project cards */
+.project-card-left {
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.project-card-right {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+.projects-section .btn-outline-primary {
+  border-radius: 5px;
+  height: 40px;
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.projects-section .btn-outline-primary:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.contact-section {
+  padding: 10px 0;
+}
+
+.contact-section h5 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.contact-section p {
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 40px;
+}
+
+.experiences-section {
+  border-top: 1px solid #ddd;
+  padding-top: 50px;
+  border-bottom: 1px solid #ddd;
+}
+
+.experience-row {
+  padding-bottom: 0, 20px;
+}
+
+.date-range {
+  color: var(--text-color);
+}
+
+.experience-title {
+  font-size: 1.25rem;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.experience-subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
