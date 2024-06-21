@@ -9,8 +9,8 @@ const Contact = () => {
       <Container className="contact-container">
         <Row>
           <Col md={3}>
-            <h5>Phone</h5>
-            <p>(+61)414042107</p>
+            <h5>Address</h5>
+            <p>Casey, Canberra</p>
           </Col>
           <Col md={3}>
             <h5>Email</h5>
