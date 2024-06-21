@@ -9,12 +9,12 @@ const Contact = () => {
       <Container className="contact-container">
         <Row>
           <Col md={3}>
-            <h5>Address</h5>
-            <p>Casey, Canberra</p>
-          </Col>
-          <Col md={3}>
             <h5>Email</h5>
             <p>xiaoting.ma0124@gmail.com</p>
+          </Col>
+          <Col md={3}>
+            <h5>Address</h5>
+            <p>Casey, ACT</p>
           </Col>
           <Col md={3}>
             <h5>Follow Me</h5>

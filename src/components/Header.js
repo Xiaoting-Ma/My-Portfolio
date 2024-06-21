@@ -5,7 +5,7 @@ import '../index.css';
 
 const Header = ({ toggleTheme, isDarkMode }) => {
   return (
-    <Navbar bg={isDarkMode ? 'dark' : 'light'} variant={isDarkMode ? 'dark' : 'light'} expand="lg">
+    <Navbar bg={isDarkMode ? 'dark' : 'light'} variant={isDarkMode ? 'dark' : 'light'} expand="lg" fixed="top" className="custom-navbar">
       <Container>
         <Navbar.Brand href="#home" className="brand-name">Xiaoting Ma</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -13,7 +13,7 @@ const Header = ({ toggleTheme, isDarkMode }) => {
           <Nav className="ms-auto">
             <Nav.Link href="#about" className="ms-3">About</Nav.Link>
             <Nav.Link href="#skills" className="ms-3">Skills</Nav.Link>
-            <Nav.Link href="#projects" className="ms-3">Projects</Nav.Link>
+            <Nav.Link href="#projects" className="ms-3">Work</Nav.Link>
             <Nav.Link href="#contact" className="ms-3">Contact</Nav.Link>
             <Button variant="outline-secondary" onClick={toggleTheme} className="ms-4">
               {isDarkMode ? <FaSun /> : <FaMoon />}

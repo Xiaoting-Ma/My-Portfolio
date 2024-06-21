@@ -48,14 +48,21 @@ section {
   padding: 20px 0;
 }
 
+.custom-navbar {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  height: 50px; 
+}
+
 .brand-name {
   font-family: 'Dancing Script', cursive;
-  font-size: 1.8rem !important; /* Adjust the size as needed */
+  font-size: 1.8rem !important; 
   color: var(--text-color);
 }
 
 .about-section {
   background: linear-gradient(90deg, var(--gradient-start) 0%, var(--gradient-end) 80%);
+  margin-top: 50px;
 }
 
 .about-section h1 {

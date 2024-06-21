@@ -10,7 +10,7 @@ const About = () => {
           <Col md={7}>
             <h1>Hello I am</h1>
             <h2>Xiaoting Ma</h2>
-            <h3>Web Developer</h3>
+            <h3>Web Developer & Software Developer</h3>
             <p>I am a web developer skilled in both front-end and back-end development.
             Proficient in various programming languages, frameworks, and technologies. 
             Strong background in development, maintenance, and Agile environments. 
