@@ -4,8 +4,41 @@ import { SiIntellijidea, SiGithub, SiGitlab, SiTailwindcss, SiRedis, SiFirebase,
 import { PiFileSqlLight } from "react-icons/pi";
 import '../index.css';
 
-const Skills = () => {
+const skillData = [
+  { icon: <FaPython size={50} color="#3776AB" />, name: "Python" },
+  { icon: <FaJava size={50} color="#007396" />, name: "Java" },
+  { icon: <FaJs size={50} color="#F0DB4F" />, name: "JavaScript" },
+  { icon: <FaReact size={50} color="#61DBFB" />, name: "React.js" },
+  { icon: <FaHtml5 size={50} color="#E34C26" />, name: "HTML5" },
+  { icon: <FaCss3Alt size={50} color="#264de4" />, name: "CSS3" },
+  { icon: <SiBootstrap size={50} color="#7952B3" />, name: "Bootstrap" },
+  { icon: <SiTailwindcss size={50} color="#38B2AC" />, name: "Tailwind CSS" },
+  { icon: <SiMui size={50} color="#007FFF" />, name: "MUI" },
+  { icon: <FaNodeJs size={50} color="#68A063" />, name: "Node.js" },
+  { icon: <SiExpress size={50} color="#000000" />, name: "Express.js" },
+  { icon: <SiJquery size={50} color="#0769AD" />, name: "jQuery" },
+  { icon: <SiFirebase size={50} color="#FFCA28" />, name: "Firebase" },
+  { icon: <FaServer size={50} color="#4CAF50" />, name: "RestAPI" },
+  { icon: <PiFileSqlLight size={50} color="#4479A1" />, name: "SQL" },
+  { icon: <SiMysql size={50} color="#4479A1" />, name: "MySQL" },
+  { icon: <SiPostgresql size={50} color="#336791" />, name: "PostgreSQL" },
+  { icon: <SiRedis size={50} color="#D82C20" />, name: "Redis" },
+  { icon: <FaAws size={50} color="#FF9900" />, name: "AWS" },
+  { icon: <FaDocker size={50} color="#0db7ed" />, name: "Docker" },
+  { icon: <SiGit size={50} color="#F1502F" />, name: "Git" },
+  { icon: <SiPostman size={50} color="#FF6C37" />, name: "Postman" },
+  { icon: <SiWebpack size={50} color="#8DD6F9" />, name: "Webpack" },
+  { icon: <FaInternetExplorer size={50} color="#1E90FF" />, name: "IoT" },
+  { icon: <SiTensorflow size={50} color="#FF6F00" />, name: "Machine Learning" },
+  { icon: <SiVisualstudiocode size={50} color="#007ACC" />, name: "VSCode" },
+  { icon: <SiIntellijidea size={50} color="#000000" />, name: "IntelliJ IDEA" },
+  { icon: <SiAndroidstudio size={50} color="#3DDC84" />, name: "Android Studio" },
+  { icon: <SiGithub size={50} color="#181717" />, name: "GitHub" },
+  { icon: <SiGitlab size={50} color="#FC6D26" />, name: "GitLab" },
+  { icon: <SiFigma size={50} color="#F24E1E" />, name: "Figma" },
+];
 
+const Skills = () => {
   useEffect(() => {
     const skills = document.querySelectorAll('.skill');
     skills.forEach((skill, index) => {
@@ -16,142 +49,27 @@ const Skills = () => {
     });
   }, []);
 
+  const renderSkillRows = (start, end) => {
+    return (
+      <div className="skill-row">
+        {skillData.slice(start, end).map((skill, index) => (
+          <div key={index} className="skill hidden" style={{ '--animation-order': index + 1 }}>
+            {skill.icon}
+            <p>{skill.name}</p>
+          </div>
+        ))}
+      </div>
+    );
+  };
+
   return (
     <section id="skills" className="p-5">
       <div className="container">
         <h2 className="text-center mb-4">My Skills</h2>
         <div className="skills-grid">
-          <div className="skill-row">
-            <div className="skill hidden" style={{ '--animation-order': 1 }}>
-              <FaPython size={50} color="#3776AB" />
-              <p>Python</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 2 }}>
-              <FaJava size={50} color="#007396" />
-              <p>Java</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 3 }}>
-              <FaJs size={50} color="#F0DB4F" />
-              <p>JavaScript</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 4 }}>
-              <FaReact size={50} color="#61DBFB" />
-              <p>React.js</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 5 }}>
-              <FaHtml5 size={50} color="#E34C26" />
-              <p>HTML5</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 6 }}>
-              <FaCss3Alt size={50} color="#264de4" />
-              <p>CSS3</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 7 }}>
-              <SiBootstrap size={50} color="#7952B3" />
-              <p>Bootstrap</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 21 }}>
-              <SiTailwindcss size={50} color="#38B2AC" />
-              <p>Tailwind CSS</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 8 }}>
-              <SiMui size={50} color="#007FFF" />
-              <p>MUI</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 9 }}>
-              <FaNodeJs size={50} color="#68A063" />
-              <p>Node.js</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 10 }}>
-              <SiExpress size={50} color="#000000" />
-              <p>Express.js</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 11 }}>
-              <SiJquery size={50} color="#0769AD" />
-              <p>jQuery</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 13 }}>
-              <SiFirebase size={50} color="#FFCA28" />
-              <p>Firebase</p>
-            </div>
-
-            <div className="skill hidden" style={{ '--animation-order': 12 }}>
-              <FaServer size={50} color="#4CAF50" />
-              <p>RestAPI</p>
-            </div>
-          </div>
-          <div className="skill-row">
-            <div className="skill hidden" style={{ '--animation-order': 13 }}>
-              <PiFileSqlLight size={50} color="#4479A1" />
-              <p>SQL</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 14 }}>
-              <SiMysql size={50} color="#4479A1" />
-              <p>MySQL</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 15 }}>
-              <SiPostgresql size={50} color="#336791" />
-              <p>PostgreSQL</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 20 }}>
-              <SiRedis size={50} color="#D82C20" />
-              <p>Redis</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 16 }}>
-              <FaAws size={50} color="#FF9900" />
-              <p>AWS</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 17 }}>
-              <FaDocker size={50} color="#0db7ed" />
-              <p>Docker</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 18 }}>
-              <SiGit size={50} color="#F1502F" />
-              <p>Git</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 14 }}>
-              <SiPostman size={50} color="#FF6C37" />
-              <p>Postman</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 19 }}>
-              <SiWebpack size={50} color="#8DD6F9" />
-              <p>Webpack</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 20 }}>
-              <FaInternetExplorer size={50} color="#1E90FF" />
-              <p>IoT</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 21 }}>
-              <SiTensorflow size={50} color="#FF6F00" />
-              <p>Machine Learning</p>
-            </div>
-          </div>
-          <div className="skill-row">
-            <div className="skill hidden" style={{ '--animation-order': 15 }}>
-              <SiVisualstudiocode size={50} color="#007ACC" />
-              <p>VSCode</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 22 }}>
-              <SiIntellijidea size={50} color="#000000" />
-              <p>IntelliJ IDEA</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 16 }}>
-              <SiAndroidstudio size={50} color="#3DDC84" />
-              <p>Android Studio</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 30 }}>
-              <SiGithub size={50} color="#181717" />
-              <p>GitHub</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 31 }}>
-              <SiGitlab size={50} color="#FC6D26" />
-              <p>GitLab</p>
-            </div>
-            <div className="skill hidden" style={{ '--animation-order': 17 }}>
-              <SiFigma size={50} color="#F24E1E" />
-              <p>Figma</p>
-            </div>
-          </div>
+          {renderSkillRows(0, 14)}
+          {renderSkillRows(14, 25)}
+          {renderSkillRows(25, skillData.length)}
         </div>
       </div>
     </section>

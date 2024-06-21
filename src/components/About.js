@@ -17,15 +17,9 @@ const About = () => {
             Quick learner, adaptable, and proactive.</p>
 
             <Button variant="outline-primary" href="#contact">Contact Me</Button>
-
-            {/* <div className="circular-buttons mt-4">
-              <a href="#resume" className="circular-button" style={{ backgroundColor: '#9cb1cb' }}>My Work</a>
-              <a href="#projects" className="circular-button" style={{ backgroundColor: '#7AB2B2' }}>Experience</a>
-              <a href="#contact" className="circular-button" style={{ backgroundColor: '#CDE8E5' }}>Contact Me</a>
-            </div> */}
           </Col>
           <Col md={5}>
-            <img src="profile2.jpg" alt="Xiaoting Ma" className="img-fluid rounded-circle profile-img" />
+            <img src="profile2.jpg" alt="Xiaoting Ma's profile" className="img-fluid rounded-circle profile-img" />
           </Col>
         </Row>
       </Container>

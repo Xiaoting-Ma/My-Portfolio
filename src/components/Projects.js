@@ -15,7 +15,7 @@ const projectsData = [
       environment.
     `,
     note: "(This project is currently in the testing phase and is not yet live)",
-    videoSrc: "https://www.youtube.com/embed/zUHwDKpzP8Q",
+    videoSrc: "https://www.youtube-nocookie.com/embed/zUHwDKpzP8Q",
   },
   {
     title: "DuoTask",
@@ -63,19 +63,18 @@ const Projects = () => {
         <h2 className="text-center mb-4">MY LATEST WORK</h2>
         {projectsData.map((project, index) => (
           <div key={index} className={`project-card ${index % 2 === 0 ? "project-card-left" : "project-card-right"}`}>
-            <Row className="align-items-center mb-4">
+            <Row className="align-items-center">
               <Col md={index % 2 === 0 ? 6 : { span: 6, order: 2 }}>
                 {project.videoSrc ? (
-                  <div className="project-image">
                     <iframe 
                       width="100%"
-                      height="350"
+                      height="380"
                       src={project.videoSrc}
                       title={project.title}
                       allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                     ></iframe>
-                  </div>
+                  
                 ) : (
                   <a href={project.siteLink} target="_blank" rel="noopener noreferrer">
                     <img src={project.imageSrc} alt={project.title} className="project-image" />
@@ -91,8 +90,8 @@ const Projects = () => {
                 </div>
                 <p>{project.description}</p>
                 {project.note && <p>{project.note}</p>}
-                {project.siteLink && <Button variant="contained-primary" href={project.siteLink}>Visit Site</Button>}
-                {project.codeLink && <Button variant="outline-primary" href={project.codeLink}>View Code</Button>}
+                {project.siteLink && <Button variant="contained-primary" href={project.siteLink} aria-label={`Visit ${project.title}`}>Visit Site</Button>}
+                {project.codeLink && <Button variant="outline-primary" href={project.codeLink} aria-label={`View code for ${project.title}`}>View Code</Button>}
               </Col>
             </Row>
           </div>

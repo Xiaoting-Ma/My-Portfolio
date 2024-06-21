@@ -29,10 +29,9 @@ const Experiences = () => {
       dateRange: '2010 - 2014',
       title: "Huazhong University of Science and Technology",
       degree: "Bachelor of Automation", 
-      description: "Data Structure, Internet Technology and Applications, Digital Circuits and Logic Programming, Foundation of Electrical & Programmable Control, Computer Network, Pattern Recognition. "
+      description: "Data Structure, Internet Technology and Applications, Digital Circuits and Logic Programming, Foundation of Electrical & Programmable Control, Computer Network, Pattern Recognition."
     }
   ];
-    
 
   return (
     <section id="experiences" className="p-5">
@@ -47,7 +46,7 @@ const Experiences = () => {
                 <Col md={3}>
                   <p className="date-range">{exp.dateRange}</p>
                 </Col>
-                <Col md={8}>
+                <Col md={9}>
                   <h3 className="experience-title">{exp.title}</h3>
                   <p className="experience-subtitle">{exp.subtitle}</p>
                   <p>{exp.description}</p>
@@ -63,15 +62,15 @@ const Experiences = () => {
             <h2 className="text-center mb-4">EDUCATION</h2>
           </Col>
           <Col md={7}>
-            {education.map((exp, index) => (
+            {education.map((edu, index) => (
               <Row key={index} className="experience-row mb-4">
                 <Col md={3}>
-                  <p className="date-range">{exp.dateRange}</p>
+                  <p className="date-range">{edu.dateRange}</p>
                 </Col>
-                <Col md={8}>
-                  <h3 className="experience-title">{exp.title}</h3>
-                  <p className="experience-subtitle">{exp.degree}</p>
-                  <p>{exp.description}</p>
+                <Col md={9}>
+                  <h3 className="experience-title">{edu.title}</h3>
+                  <p className="experience-subtitle">{edu.degree}</p>
+                  <p>{edu.description}</p>
                 </Col>
               </Row>
             ))}
