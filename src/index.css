@@ -4,8 +4,6 @@
   --primary-color: #89a2c2;
   --secondary-color: #415a77;
   --shadow-color: rgba(0, 2, 0, 0.5);
-  --gradient-start: rgba(255, 255, 255, 1);
-  --gradient-end: rgb(178, 205, 231);
 }
 
 body {
@@ -101,32 +99,6 @@ section {
   color: #fff;
 }
 
-.circular-buttons {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 20px;
-  gap: 100px;
-}
-
-.circular-button {
-  display: inline-block;
-  width: 150px;
-  height: 150px;
-  line-height: 150px;
-  border-radius: 50%;
-  border: 1px solid black; /* Add this line for the black border */
-  text-align: center;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  transition: transform 0.2s;
-}
-
-.circular-button:hover {
-  transform: scale(1.1);
-}
-
-
 .skills-grid {
   display: flex;
   flex-direction: column;
@@ -137,6 +109,7 @@ section {
 .skill-row {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
   gap: 30px; /* Increase the gap between skills */
 }
 
@@ -206,7 +179,7 @@ section {
 
 .project-image {
   width: 100%;
-  height: 350px;
+  height: 100%;
 }
 
 .project-card h3 {
@@ -228,16 +201,49 @@ section {
   animation: slideInRight 1s ease-out forwards;
 }
 
+.projects-section .tags {
+  font-size: 14px;
+  font-weight: 300;
+  color: black;
+  span {
+    padding: 5px;
+    background-color: #f1efef;
+    border-radius: 8px;
+  }
+}
+.projects-section .tags-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensure wrapping if there are too many tags */
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
 .projects-section .btn-outline-primary {
   border-radius: 5px;
   height: 40px;
   color: var(--secondary-color);
   border-color: var(--secondary-color);
+  width: 120px;
+}
+.projects-section .btn-contained-primary {
+  border-radius: 5px;
+  height: 40px;
+  color: white;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  margin-right: 50px;
+  width: 120px;
 }
 
 .projects-section .btn-outline-primary:hover {
   background-color: var(--secondary-color);
   color: #fff;
+  border-color: var(--secondary-color);
+}
+.projects-section .btn-contained-primary:hover {
+  background-color: #fff;
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
 .contact-section {

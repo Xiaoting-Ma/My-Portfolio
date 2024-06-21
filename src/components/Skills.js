@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { FaReact, FaPython, FaNodeJs, FaJs, FaHtml5, FaCss3Alt, FaAws, FaDocker, FaJava, FaServer, FaInternetExplorer } from 'react-icons/fa';
-import { SiJquery, SiMui, SiBootstrap, SiMysql, SiPostgresql, SiGit, SiWebpack, SiTensorflow, SiExpress } from 'react-icons/si';
+import { SiIntellijidea, SiGithub, SiGitlab, SiTailwindcss, SiRedis, SiFirebase, SiPostman, SiVisualstudiocode, SiAndroidstudio, SiFigma, SiJquery, SiMui, SiBootstrap, SiMysql, SiPostgresql, SiGit, SiWebpack, SiTensorflow, SiExpress } from 'react-icons/si';
 import { PiFileSqlLight } from "react-icons/pi";
 import '../index.css';
 
@@ -50,6 +50,10 @@ const Skills = () => {
               <SiBootstrap size={50} color="#7952B3" />
               <p>Bootstrap</p>
             </div>
+            <div className="skill hidden" style={{ '--animation-order': 21 }}>
+              <SiTailwindcss size={50} color="#38B2AC" />
+              <p>Tailwind CSS</p>
+            </div>
             <div className="skill hidden" style={{ '--animation-order': 8 }}>
               <SiMui size={50} color="#007FFF" />
               <p>MUI</p>
@@ -66,9 +70,14 @@ const Skills = () => {
               <SiJquery size={50} color="#0769AD" />
               <p>jQuery</p>
             </div>
+            <div className="skill hidden" style={{ '--animation-order': 13 }}>
+              <SiFirebase size={50} color="#FFCA28" />
+              <p>Firebase</p>
+            </div>
+
             <div className="skill hidden" style={{ '--animation-order': 12 }}>
               <FaServer size={50} color="#4CAF50" />
-              <p>Restful API</p>
+              <p>RestAPI</p>
             </div>
           </div>
           <div className="skill-row">
@@ -84,6 +93,10 @@ const Skills = () => {
               <SiPostgresql size={50} color="#336791" />
               <p>PostgreSQL</p>
             </div>
+            <div className="skill hidden" style={{ '--animation-order': 20 }}>
+              <SiRedis size={50} color="#D82C20" />
+              <p>Redis</p>
+            </div>
             <div className="skill hidden" style={{ '--animation-order': 16 }}>
               <FaAws size={50} color="#FF9900" />
               <p>AWS</p>
@@ -96,6 +109,10 @@ const Skills = () => {
               <SiGit size={50} color="#F1502F" />
               <p>Git</p>
             </div>
+            <div className="skill hidden" style={{ '--animation-order': 14 }}>
+              <SiPostman size={50} color="#FF6C37" />
+              <p>Postman</p>
+            </div>
             <div className="skill hidden" style={{ '--animation-order': 19 }}>
               <SiWebpack size={50} color="#8DD6F9" />
               <p>Webpack</p>
@@ -107,6 +124,32 @@ const Skills = () => {
             <div className="skill hidden" style={{ '--animation-order': 21 }}>
               <SiTensorflow size={50} color="#FF6F00" />
               <p>Machine Learning</p>
+            </div>
+          </div>
+          <div className="skill-row">
+            <div className="skill hidden" style={{ '--animation-order': 15 }}>
+              <SiVisualstudiocode size={50} color="#007ACC" />
+              <p>VSCode</p>
+            </div>
+            <div className="skill hidden" style={{ '--animation-order': 22 }}>
+              <SiIntellijidea size={50} color="#000000" />
+              <p>IntelliJ IDEA</p>
+            </div>
+            <div className="skill hidden" style={{ '--animation-order': 16 }}>
+              <SiAndroidstudio size={50} color="#3DDC84" />
+              <p>Android Studio</p>
+            </div>
+            <div className="skill hidden" style={{ '--animation-order': 30 }}>
+              <SiGithub size={50} color="#181717" />
+              <p>GitHub</p>
+            </div>
+            <div className="skill hidden" style={{ '--animation-order': 31 }}>
+              <SiGitlab size={50} color="#FC6D26" />
+              <p>GitLab</p>
+            </div>
+            <div className="skill hidden" style={{ '--animation-order': 17 }}>
+              <SiFigma size={50} color="#F24E1E" />
+              <p>Figma</p>
             </div>
           </div>
         </div>
