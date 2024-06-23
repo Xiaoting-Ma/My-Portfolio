@@ -9,13 +9,13 @@ const Header = ({ toggleTheme, isDarkMode }) => {
       <Container>
         <Navbar.Brand href="#home" className="brand-name">Xiaoting Ma</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" className='drop-down-menu'>
           <Nav className="ms-auto">
             <Nav.Link href="#about" className="ms-3">About</Nav.Link>
             <Nav.Link href="#skills" className="ms-3">Skills</Nav.Link>
             <Nav.Link href="#projects" className="ms-3">Work</Nav.Link>
             <Nav.Link href="#contact" className="ms-3">Contact</Nav.Link>
-            <Button variant="outline-secondary" onClick={toggleTheme} className="ms-4">
+            <Button variant="outline-secondary" onClick={toggleTheme} className="ms-3 me-3">
               {isDarkMode ? <FaSun /> : <FaMoon />}
             </Button>
           </Nav>
