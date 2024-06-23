@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import '../index.css'; // Make sure this CSS file includes the styles for the circular buttons
+import '../index.css'; 
 
 const About = () => {
   return (

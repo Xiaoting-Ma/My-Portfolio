@@ -28,7 +28,7 @@ const Contact = () => {
             </p>
           </Col>
           <Col md = {3} className="text-center mt-1">
-            <p>© 2024-present Xiaoting Ma. All rights reserved</p>
+            <div>© 2024-present Xiaoting Ma. All rights reserved</div>
           </Col>
         </Row>
       </Container>

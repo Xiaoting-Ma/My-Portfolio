@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Experiences from './components/Experiences';
+import Cursor from './components/CustomCursor';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -27,6 +28,7 @@ function App() {
       <Projects />
       <Experiences />
       <Contact />
+      <Cursor />
     </div>
   );
 }
