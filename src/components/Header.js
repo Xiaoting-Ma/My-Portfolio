@@ -14,6 +14,7 @@ const Header = ({ toggleTheme, isDarkMode }) => {
             <Nav.Link href="#about" className="ms-3">About</Nav.Link>
             <Nav.Link href="#skills" className="ms-3">Skills</Nav.Link>
             <Nav.Link href="#projects" className="ms-3">Work</Nav.Link>
+            <Nav.Link href="#experiences" className="ms-3">Experience</Nav.Link>
             <Nav.Link href="#contact" className="ms-3">Contact</Nav.Link>
             <Button variant="outline-secondary" onClick={toggleTheme} className="ms-3 me-3">
               {isDarkMode ? <FaSun /> : <FaMoon />}
