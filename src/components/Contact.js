@@ -22,7 +22,7 @@ const Contact = () => {
             <a href="https://www.instagram.com/xiaoting.ma1012/" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={24}/>
             </a>
-            <a href="https://www.linkedin.com/in/xiaoting-ma-321619261" target="_blank" rel="noopener noreferrer">
+            <a href="www.linkedin.com/in/xiaoting-ma" target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={24} />
             </a>
             </p>

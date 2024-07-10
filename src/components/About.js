@@ -8,13 +8,15 @@ const About = () => {
       <Container>
         <Row>
           <Col md={6}>
-            <h1>Hello I am</h1>
-            <h2>Xiaoting Ma</h2>
-            <h3>Web Developer & Software Developer</h3>
-            <p>I am a web developer skilled in both front-end and back-end development.
-            Proficient in various programming languages, frameworks, and technologies. 
-            Strong background in development, maintenance, and Agile environments. 
-            Quick learner, adaptable, and proactive.</p>
+            <h1>Xiaoting Ma</h1>
+            <h2>Web Developer & Software Developer</h2>
+            <h3>Driven by a genuine passion for learning and a love for technology</h3>
+            <p> I love immersing myself in ideas, data and coding to drive meaningful 
+            insights and create jaw-dropping outcomes. As a developer skilled in 
+            both front-end and back-end development, I am proficient in various 
+            programming languages, frameworks, and technologies. With a strong 
+            background in development, maintenance, and Agile environments, I am 
+            a quick learner, adaptable, and proactive.</p>
 
             <Button variant="outline-primary" href="#contact">Contact Me</Button>
           </Col>

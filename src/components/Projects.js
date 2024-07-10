@@ -7,12 +7,10 @@ const projectsData = [
     title: "Auto Job (Job Hunting Tool)",
     tags: ["React", "MUI", "AWS", "MySQL", "Java", "Spring Boot"],
     description: `
-      Auto Job is a web application designed to streamline the job hunting process. It utilizes React 
-      and Material UI for the front-end, providing a seamless and user-centric interface. The backend is 
-      built with Java and Spring Boot, ensuring robust authorization and performance optimization. The tool 
-      integrates with AWS for deployment and MySQL for data management, using Redis for caching and Docker 
-      for containerization. GitHub is employed for version control, fostering a collaborative development 
-      environment.
+      A cloud-based app to simplify APS job searches by providing customized matches and emailing users suitable 
+      listings based on their preferences, with job postings stored in a database.  
+      Built with React and MUI for a seamless front-end, and Java Spring Boot for robust backend performance.
+       Deployed on AWS, using MySQL for data, Redis for caching, and Docker for containerization. 
     `,
     note: "(This project is currently in the testing phase and is not yet live)",
     videoSrc: "https://www.youtube-nocookie.com/embed/zUHwDKpzP8Q",
@@ -21,10 +19,11 @@ const projectsData = [
     title: "DuoTask",
     tags: ["React", "MUI", "Node.js", "Supabase", "Firebase"],
     description: `
-      DuoTask is a full-stack task management app built with React and Material-UI, featuring Axios for API calls, a Node.js 
-      and Express backend, and a PostgreSQL database via Supabase. It uses Firebase Authentication for secure login 
-      and is deployed on Vercel with continuous integration and automated deployment. DuoTask is designed to be 
-      intuitive and efficient, making task management simple and enjoyable.
+      A task management app using web technologies to help users organize tasks, featuring authentication, categorization, 
+      and responsive design, with backend and database management.
+      Built with React, Material-UI, and Axios for API calls. It features a Node.js and Express backend, PostgreSQL database
+       via Supabase, and Firebase Authentication for secure login. Deployed on Vercel with continuous integration and automated
+        deployment, DuoTask is designed for intuitive and efficient task management.
     `,
     siteLink: "https://task-management-app-three-green.vercel.app/",
     codeLink: "https://github.com/Xiaoting-Ma/Task-Management-App",
@@ -34,23 +33,23 @@ const projectsData = [
     title: "Tax Calculator",
     tags: ["React", "MUI"],
     description: `
-      This is a web application built with React and styled using Material-UI (MUI) and Emotion. It allows users to 
-      estimate their taxes by selecting the income year, entering their total taxable income, and specifying their 
-      residency status.
+      The application allows users to estimate their taxes in real-time by entering personal information. Built with React and 
+      styled using MUI and Emotion, it lets users select the income year, enter total taxable income, and specify residency 
+      status. It offers a responsive and intuitive user experience and is deployed on GitHub Pages for easy access and real-time
+       tax calculations.
     `,
-    note: "The application provides a responsive and intuitive user experience. Deployed on GitHub Pages, it ensures easy access and real-time tax calculations.",
     siteLink: "https://xiaoting-ma.github.io/Tax-Calculator/",
     codeLink: "https://github.com/Xiaoting-Ma/Tax-Calculator",
     imageSrc: "image1.png",
   },
   {
     title: "Dog Walker",
-    tags: ["Java", "SQLite"],
+    tags: ["Java", "SQLite", "Design Pattern"],
     description: `
-      TheDogWalker is a marketplace app that connects dog owners with people interested in walking dogs. 
-      Developed with Android Studio using Java and XML, it employs SQLite for data storage and uses Hashmaps 
-      and AVL trees for efficient data management. The app ensures robust performance through comprehensive 
-      testing and design patterns like Facade, Singleton, and Factory.
+      TheDogWalker is a marketplace app connecting dog owners with dog walkers. Developed with Android Studio using Java and 
+      XML, it employs SQLite for data storage and uses Hashmaps and AVL trees for efficient data management. Walkers can 
+      request and obtain approval for walking dogs. The app ensures robust performance through comprehensive testing and 
+      design patterns like Facade, Singleton, and Factory.
     `,
     imageSrc: "image3.png",
   },
