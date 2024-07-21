@@ -12,7 +12,7 @@ const About = () => {
             <h2>Web Developer & Software Developer</h2>
             <h3>Driven by a genuine passion for learning and a love for technology</h3>
             <p> I love immersing myself in ideas, data and coding to drive meaningful 
-            insights and create jaw-dropping outcomes. As a developer skilled in 
+            insights and create impactful outcomes. As a developer skilled in 
             both front-end and back-end development, I am proficient in various 
             programming languages, frameworks, and technologies. With a strong 
             background in development, maintenance, and Agile environments, I am 

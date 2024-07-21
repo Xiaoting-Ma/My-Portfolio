@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa';
 import '../index.css';
 
 const Contact = () => {
@@ -22,7 +22,10 @@ const Contact = () => {
             <a href="https://www.instagram.com/xiaoting.ma1012/" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={24}/>
             </a>
-            <a href="www.linkedin.com/in/xiaoting-ma" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Xiaoting-Ma/" target="_blank" rel="noopener noreferrer">
+              <FaGithub size={24}/>
+            </a>
+            <a href="https://www.linkedin.com/in/xiaoting-ma" target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={24} />
             </a>
             </p>
