@@ -14,7 +14,7 @@ const Experiences = () => {
       dateRange: "2014 - 2018",
       title: "Telecommunication Engineer and Cost Manager",
       subtitle: "Xining, China", 
-      description: ["Led a team of 100+ engineers on major projects, effectively managing departmental costs and budget for 7 key groups, resulting in optimized resource allocation. ", "Prepared and executed plans for installations and upgrades of wireless networks, enhancing wireless network systems' efficiency and coverage.", "Reduced system malfunctions by designing and implementing a robust maintenance and service routine, significantly improving system reliability.", "Earned Employee of the Year award and received a promotion to Cost Manager within two years for exceptional performance."]
+      description: ["Developed and implemented IT support guidelines. Managed daily IT desktop and meeting support tasks, ensuring smooth operation of internal meeting systems and office software accounts. ", "Optimized internal maintenance processes through automation to increase efficiency and quality. ", "Integrated internal systems for network data sharing and interaction, developing interfaces for engineers and ensuring data security and consistency. ", "Earned Employee of the Year award and received a promotion within two years. "]
     }
   ];
 
