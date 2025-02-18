@@ -11,13 +11,15 @@ const About = () => {
             <h1>Xiaoting Ma</h1>
             <h2>Web Developer & Software Developer</h2>
             <h3>Driven by a genuine passion for learning and a love for technology</h3>
-            <p> I love immersing myself in ideas, data and coding to drive meaningful 
+            {/* <p> I love immersing myself in ideas, data and coding to drive meaningful 
             insights and create impactful outcomes. As a developer skilled in 
             both front-end and back-end development, I am proficient in various 
-            programming languages, frameworks, and technologies. With a strong 
-            background in development, maintenance, and Agile environments, I am 
-            a quick learner, adaptable, and proactive.</p>
-
+            programming languages, frameworks, and technologies, with a strong 
+            background in development, maintenance, and Agile environments.</p> */}
+            <p>I’m passionate about using data and coding to create meaningful insights and 
+            impactful results. As a developer with experience in both front-end and back-end, 
+            I’m skilled in various programming languages, frameworks, and technologies, with 
+            a solid background in development, maintenance, and Agile environments.</p>
             <Button variant="outline-primary" href="#contact">Contact Me</Button>
           </Col>
           <Col md={6}>

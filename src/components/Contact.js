@@ -31,7 +31,7 @@ const Contact = () => {
             </p>
           </Col>
           <Col md = {3} className="text-center mt-1">
-            <div>© 2024-present Xiaoting Ma. All rights reserved</div>
+            <div>© 2025-present Xiaoting Ma. All rights reserved</div>
           </Col>
         </Row>
       </Container>

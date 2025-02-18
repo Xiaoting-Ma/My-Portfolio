@@ -4,7 +4,24 @@ import '../index.css';
 
 const projectsData = [
   {
-    title: "Auto Job (Job Hunting Tool)",
+    title: "QX Net (2024)",
+    tags: ["React", "Redux", "Node.js", "MongoDB", "Firebase"],
+    description: "QiXin is a leading property directory in Australia, dedicated to providing users with comprehensive and accurate property information. Built with React, Redux, and Node.js, the platform delivers a seamless and dynamic user experience. With a MongoDB-powered database and Firebase authentication, QiXin ensures secure access and efficient data management. ",
+    siteLink: "https://www.qixin.com",
+    codeLink: "https://github.com/liuyiheng0113/qixinnetWeb",
+    imageSrc: "image_qixin.png",
+  },
+  {
+    title: "Duralyze (2025)",
+    tags: ["React", "MUI", "Firebase"],
+    description: "Duralyze is driving the transition to a carbon-free future by revolutionizing electrolyser technology for green molecule production. Built with React and MUI, the platform offers a seamless and responsive user experience. With Firebase hosting, Duralyze ensures a secure, scalable, and high-performance web presence. ",
+    siteLink: "https://www.duralyze.com",
+    codeLink: "https://github.com/qinjuewu00/HyGenSolutions",
+    imageSrc: "image_duralyze.png"
+  },
+
+  {
+    title: "Auto Job (2024)",
     tags: ["React", "MUI", "AWS", "MySQL", "Java", "Spring Boot"],
     description: `
       A cloud-based app to simplify APS job searches by providing customized matches and emailing users suitable 
@@ -12,11 +29,12 @@ const projectsData = [
       Built with React and MUI for a seamless front-end, and Java Spring Boot for robust backend performance.
        Deployed on AWS, using MySQL for data, Redis for caching, and Docker for containerization. 
     `,
-    note: "(This project is currently in the testing phase and is not yet live)",
+    siteLink: "https://www.autojob.one/",
+    codeLink: "https://github.com/AutoJob-Official",
     videoSrc: "https://www.youtube-nocookie.com/embed/zUHwDKpzP8Q",
   },
   {
-    title: "DuoTask",
+    title: "DuoTask (2024)",
     tags: ["React", "MUI", "Node.js", "Supabase", "Firebase"],
     description: `
       A task management app using web technologies to help users organize tasks, featuring authentication, categorization, 
@@ -30,7 +48,7 @@ const projectsData = [
     imageSrc: "image2.png",
   },
   {
-    title: "Tax Calculator",
+    title: "Tax Calculator (2024)",
     tags: ["React", "MUI"],
     description: `
       The application allows users to estimate their taxes in real-time by entering personal information. Built with React and 
@@ -43,7 +61,7 @@ const projectsData = [
     imageSrc: "image1.png",
   },
   {
-    title: "Dog Walker",
+    title: "Dog Walker (2023)",
     tags: ["Java", "SQLite", "Design Pattern"],
     description: `
       TheDogWalker is a marketplace app connecting dog owners with dog walkers. Developed with Android Studio using Java and 
@@ -57,9 +75,9 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="projects-section p-5">
+    <section id="projects" className="projects-section p-2">
       <Container>
-        <h2 className="text-center mb-4">MY LATEST WORK</h2>
+        <h2 className="text-center mb-8">MY LATEST WORK</h2>
         {projectsData.map((project, index) => (
           <div key={index} className={`project-card ${index % 2 === 0 ? "project-card-left" : "project-card-right"}`}>
             <Row className="align-items-center">

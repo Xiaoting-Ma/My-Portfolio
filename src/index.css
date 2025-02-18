@@ -67,6 +67,11 @@ section {
   padding: 20px 0;
 }
 
+.navbar {
+  background-color: "#f8f9fa";
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .custom-navbar {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -74,7 +79,7 @@ section {
 }
 
 .drop-down-menu {
-  background-color: var(--background-color);
+  background-color: "#f8f9fa";
   padding: 10px;
   border-radius: 5px;
 }
